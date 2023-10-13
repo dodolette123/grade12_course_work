@@ -67,10 +67,10 @@ def generate_test_linked_list():
   return linked_list
 
 # Use this to test your code:
-#test_list = generate_test_linked_list()
-#print(test_list.stringify_list())
-#nth_last = nth_last_node(test_list, 4)
-#print(nth_last.get_value())
+test_list = generate_test_linked_list()
+print(test_list.stringify_list())
+nth_last = nth_last_node(test_list, 4)
+print(nth_last.get_value())
 def find_middle_alt(linked_list):
     slow_ptr = linked_list.head_node
     fast_ptr = linked_list.head_node
@@ -87,8 +87,9 @@ def generate_test_linked_list():
     k = Node(i)
     linked_list.insert_beginning(k)
   return linked_list
-
+"""
 test_list = generate_test_linked_list()
 print(test_list.stringify_list())
 middle_node = find_middle_alt(test_list)
 print(middle_node.get_value())
+"""
